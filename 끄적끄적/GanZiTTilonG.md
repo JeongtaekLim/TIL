@@ -1,8 +1,4 @@
-# 개발phase
-
-```
-개발자 GanZiTTilonG의 이야기
-```
+# GanZiTTilonG의 이야기
 
 ## 나만의 개발 phase
 
