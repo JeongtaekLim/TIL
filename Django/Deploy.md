@@ -13,6 +13,7 @@ and you may can't see log file in `/var/log/upstart/gunicorn.log`
 ```
 $ python manage.py collectstatic
 ```
+about more details, please look [stack overflow](http://stackoverflow.com/questions/8687927/django-static-static-url-static-root)
 
 2. gunicorn
 * install
