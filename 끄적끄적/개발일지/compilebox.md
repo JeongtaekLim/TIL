@@ -58,3 +58,6 @@ input파일 들이 있는 특정 디렉토리를 지정하여 iterate하면서 �
 [ 결론 ]
 
 Docker 생성 및 돌리는 핵심 코드가 script.sh인 것을 파악해서, 소스를 수정해서 docker 운영하고자 합니다. 시간은 좀더 걸리겠으나 충분히 시간투자할 가치가 있다고 판단, shell script 공부해서 만드는 것으로 결론
+
+# 3일차 - shell scripting
+`ShellScript` 폴더 참조
