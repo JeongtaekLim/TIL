@@ -7,6 +7,7 @@
 ## run container
 ```
 $ sudo docker run -i -t --name hello ubuntu /bin/bash
+$ sudo docker run -i -t ubuntu /bin/bash
 ```
 * `--name` : assign new name
 * `-i` + `-t`: interactive + Pseudo-tty, you can use container's bash
