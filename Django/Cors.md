@@ -11,5 +11,4 @@ I got message from developer console ``No 'Access-Control-Allow-Origin' header``
 This is not a problem of client-side but of server.
 
 * Solution
-I've install ``django-cors-headers`` by __ottoyiu__
-link : https://github.com/ottoyiu/django-cors-headers/
+I've install [``django-cors-headers``](https://github.com/ottoyiu/django-cors-headers/) by __ottoyiu__

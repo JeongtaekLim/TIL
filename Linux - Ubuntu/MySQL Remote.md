@@ -55,3 +55,5 @@ to check connection, try that
 
 ## Don forget allow port from hosting site
 If you are using some virtual hosting, please don't forget to `add firewall rule` on that site also!
+
+source : [stack overflow](http://stackoverflow.com/questions/1559955/host-xxx-xx-xxx-xxx-is-not-allowed-to-connect-to-this-mysql-server)

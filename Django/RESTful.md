@@ -1,6 +1,18 @@
 # RESTful
 
-* Parser
+## Installation
+* package install
+```
+pip install djangorestframework
+```
+* edit settings.py
+```
+INSTALLED_APPS = [
+    ...
+    'rest_framework',
+]
+```
+## Parser
 
 From Postman, you may want to send data as `form-data` or `x-www-form-urlencoded`
 
