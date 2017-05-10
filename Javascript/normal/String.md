@@ -1,6 +1,7 @@
 # String
-* toString
+## toString
 ```js
 var a = 1
 a.toString()
 ```
+## comparison
