@@ -43,7 +43,8 @@ server {
 }
 ```
 
-That's all
+That's all!
+
 This guide has to be updated in future with some content about
 ```
 $ sudo service gunicorn start
