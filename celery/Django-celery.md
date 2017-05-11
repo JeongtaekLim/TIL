@@ -13,9 +13,9 @@ import os
 from celery import Celery
 
 # set the default Django settings module for the 'celery' program.
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'alms.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'proj.settings')
 
-app = Celery('alms')
+app = Celery('proj')
 
 # Using a string here means the worker don't have to serialize
 # the configuration object to child processes.
@@ -92,3 +92,27 @@ __all__ = ['celery_app']
 $ celery -A proj worker -l info
 ```
 please see [documentation](http://docs.celeryproject.org/en/latest/django/first-steps-with-django.html)
+
+## Error
+If you get error like
+```
+[2017-05-11 13:01:11,644: ERROR/MainProcess] Received unregistered task of type 'simulation.tasks.add'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[1, 1], {}, {"chord": null, "callbacks": null, "errbacks": null, "chain": null}]' (81b)
+Traceback (most recent call last):
+  File "/Users/jtlim/Desktop/03_GraduationProject/00_mango-back/venv/lib/python3.5/site-packages/celery/worker/consumer/consumer.py", line 559, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'simulation.tasks.add'
+```
+Then please check your `INSTALLED_APPS` in `settings.py`.
+
+If you forget to add your new app to `INSTALLED_APPS`, that error will occur.
