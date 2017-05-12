@@ -10,6 +10,12 @@ $ sudo service gunicorn start
 and you may can't see log file in `/var/log/upstart/gunicorn.log`
 
 1. static file
+
+At first, let me show basic static directory setting in `settings.py`
+```
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+```
 ```
 $ python manage.py collectstatic
 ```

@@ -104,3 +104,20 @@ no body data is required
 ```
 
 ---------------
+
+### Publisher 삭제 [__DELETE__]
+
+active여부에 상관없이 모든 publisher를 삭제합니다.
+
+* url
+```
+http://localhost:8000/simulation/pub/kill/all/
+```
+* request
+no body data is required
+
+* response
+```
+"Total num of 6 tasks are deleted"
+```
+
