@@ -9,6 +9,8 @@ sudo apt-get install mysql-server
 sudo mysql_secure_installation
 systemctl status mysql.service
 
+# build essential
+
 # redis
 sudo apt-get install redis-server
 

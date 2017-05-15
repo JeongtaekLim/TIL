@@ -1,4 +1,4 @@
-# RESTful
+# Setting
 
 ## Installation
 * package install
