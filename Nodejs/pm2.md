@@ -70,3 +70,14 @@ __/\\\\\\\\\\\\\____/\\\\____________/\\\\____/\\\\\\\\\_____
 └──────────┴────┴──────┴──────┴────────┴─────────┴────────┴─────┴───────────┴──────────┘
  Use `pm2 show <id|name>` to get more details about an app
 ```
+
+## With npm start
+if you want to run pm2 with `npm start`, just
+```
+pm2 start npm -- start
+```
+
+## Run pm2 as service
+please look
+
+[Digital Ocean - How To Use PM2 to Setup a Node.js Production Environment On An Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-use-pm2-to-setup-a-node-js-production-environment-on-an-ubuntu-vps)

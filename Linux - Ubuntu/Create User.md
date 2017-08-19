@@ -14,3 +14,8 @@
 ```
 # su - username
 ```
+
+4. If you want to list all users,
+```
+vim /etc/passwd
+```

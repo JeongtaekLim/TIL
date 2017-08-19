@@ -29,3 +29,8 @@ git add .
 // reset all added files
 git reset
 ```
+
+* push
+```
+git push [repository name, ex. origin] [branch name, ex. feature/abc]
+```
