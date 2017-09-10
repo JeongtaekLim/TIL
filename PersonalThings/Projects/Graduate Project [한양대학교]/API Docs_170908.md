@@ -35,7 +35,7 @@ range(low, high)의 범위로 오르락내리락 하며,random.uniforn(-noise, n
 ### Publisher 조회 [__GET__]
 * url & request
 ```
-// 현재 active publisher 조회
+// 현재 publisher 조회
 http://localhost:8000/simulation/pub/list/
 ```
 * response
@@ -47,6 +47,25 @@ http://localhost:8000/simulation/pub/list/
 ```
 -----------
 
+### Publisher 상세정보 조회 [__GET__]
+* url & request
+```
+// publisher 정보 조회
+http://localhost:8000/simulation/pub/info/unique_id=c9117d08-9296-4bb-a607-dd1d59d8d4f1
+```
+* response
+```json
+{
+    "id": 97,
+    "unique_id": "897c1e68-8e39-4623-af27-7287fce2cafa",
+    "topic": "/test/asdf",
+    "noise": 1,
+    "low": 0,
+    "high": 10,
+    "created": "2017-09-10T07:09:20.311862Z"
+}
+```
+-----------
 
 ### Publisher 종료 [__POST__]
 
