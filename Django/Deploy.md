@@ -2,7 +2,7 @@
 
 * Caution
 
-This turorial is based on [Digital Ocean, Django deploy tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-14-04), but not covering full content.
+This turorial is based on [Digital Ocean, Django deploy tutorial, Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04), but not covering full content.
 ex, following this instruction, you can't run guinicorn by
 ```
 $ sudo service gunicorn start

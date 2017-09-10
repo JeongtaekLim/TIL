@@ -1,6 +1,7 @@
 # APIDocs
 
-localhost:8000의 부분은 따로 전달된 [IP address]:[port]로 수정하여 사용해주시기 바랍니다.
+* localhost:8000의 부분은 따로 전달된 [IP address]:[port]로 수정하여 사용해주시기 바랍니다.
+* 주의사항 : 현재 simulator는 서버 사양상 최대 10개까지만 동시생성이 가능합니다.
 
 
 ## Simulation
