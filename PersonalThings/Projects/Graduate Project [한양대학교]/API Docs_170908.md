@@ -51,7 +51,7 @@ http://localhost:8000/simulation/pub/list/
 * url & request
 ```
 // publisher 정보 조회
-http://localhost:8000/simulation/pub/info/unique_id=c9117d08-9296-4bb-a607-dd1d59d8d4f1
+http://localhost:8000/simulation/pub/info/?unique_id=c9117d08-9296-4bb-a607-dd1d59d8d4f1
 ```
 * response
 ```json
