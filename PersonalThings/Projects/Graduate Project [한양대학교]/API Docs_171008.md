@@ -87,7 +87,7 @@ http://localhost:8000/ems/list/
 
 * request example
 ```
-http://localhost:8000/oems/list/?oems_id=1
+http://localhost:8000/ems/list/?oems_id=1
 ```
 * response
 ```json
