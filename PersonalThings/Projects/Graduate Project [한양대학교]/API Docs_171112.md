@@ -410,7 +410,7 @@ http://localhost:8000/device/control/
 
 * response
 
-> http://localhost:8000/device/logs/recent/?oems_id=1&ems_id=1&num=1&led_ids=1|2|3|4|5&pv_ids=7&ess_ids=8
+> http://localhost:8000/device/control/
 ```json
 "success"
 ```
