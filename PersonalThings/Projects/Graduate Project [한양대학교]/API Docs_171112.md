@@ -18,7 +18,7 @@ http://localhost:8000/oems/list/
 
 | 필드명                 | 유효값          | 예시               | 비고                      |
 |----------------------|---------------|-------------------|--------------------------|
-| __[선택]__include_ems | true<br>false | include_ems=true  | 대소문자 상관없음             |
+| __[선택]__ include_ems | true<br>false | include_ems=true  | 대소문자 상관없음             |
 
 * request example
 ```
