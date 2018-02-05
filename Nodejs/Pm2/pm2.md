@@ -72,9 +72,18 @@ __/\\\\\\\\\\\\\____/\\\\____________/\\\\____/\\\\\\\\\_____
 ```
 
 ## With npm start
-if you want to run pm2 with `npm start`, just
+If you want to run pm2 with `npm start`, just
 ```
 pm2 start npm -- start
+```
+In case of next.js(based on [Next.js Issues](https://github.com/zeit/next.js/issues/109))
+```
+# for development
+pm2 start npm --name "next" -- run dev
+
+# for production
+npm run build
+pm2 start npm --name "next" -- start
 ```
 
 ## Run pm2 as service

@@ -1,4 +1,4 @@
-# [Django: Howto add ForeignKey to multiple models](https://medium.com/@bhrigu/django-how-to-add-foreignkey-to-multiple-models-394596f06e84)
+# [Django: How to add ForeignKey to multiple models](https://medium.com/@bhrigu/django-how-to-add-foreignkey-to-multiple-models-394596f06e84)
 
 기본적으로, 한종류 이상의 모델에 대한 관계는 ForeignKey를 통해 생성한다.
 

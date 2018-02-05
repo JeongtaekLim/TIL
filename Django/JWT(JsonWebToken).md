@@ -4,7 +4,7 @@ JWT is JSON Web Token. It can replace original Django login
 $ pip install djangorestframework-jwt
 ```
 In your django Settings.py
-```
+```py
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
@@ -17,7 +17,7 @@ REST_FRAMEWORK = {
 }
 ```
 In your urls.py
-```
+```py
 from rest_framework_jwt.views import obtain_jwt_token
 #...
 
