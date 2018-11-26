@@ -1,6 +1,16 @@
 #vimrc
 
-* sample
+* Sample
+```
+set nocompatible
+filetype indent plugin on
+syntax on
+set showcmd
+set autoindent
+set number
+```
+
+* Explanations
 ```
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
