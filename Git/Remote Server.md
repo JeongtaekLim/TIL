@@ -4,6 +4,11 @@
 ```
 $ git fetch
 ```
+* checkout
+```
+$ git fetch
+$ git checkout test
+```
 
 * check branch
 ```
