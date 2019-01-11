@@ -1,5 +1,7 @@
 # Before Start - 도입실패이유
-영상을 한번 띄워주는 랜딩페이지와는 다르게, 유동적으로 영상을 보이게, 안보이게 조작하는 Learning Management System(이하 LMS)의 경우, 
+영상을 한번 띄워주는 랜딩페이지와는 다르게, 유동적으로 영상을 보이게, 안보이게 조작하는 Learning Management System(이하 LMS)의 경우, 사용이 불가하다. 이유는 아래와 같다.
+- Vimeo 자체 GTM 연동 스크립트는 로딩시(스크립트가 최초로 로딩될 때) 그 시점의 html을 뒤져, vimeo를 찾아낸 다음 GTM 플러그인을 실행한다.
+- LMS는 영상이 보였다 안보였다 하므로 무의미하다
 
 # Introduction
 
