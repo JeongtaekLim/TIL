@@ -1,13 +1,7 @@
+# run container
 ```
-/home/__user/compilebox/API/DockerTimeout.sh 20s -u mysql -e 'NODE_PATH=/usr/local/lib/node_modules' -i -t -v  "/home/__user/compilebox/API/temp/1870302ea341a736bb39":/usercode virtual_machine /usercode/script.sh python file.py
-```
-
-# run
-
-## run container
-```
-$ sudo docker run -i -t --name hello ubuntu /bin/bash
-$ sudo docker run -i -t ubuntu /bin/bash
+$ sudo docker run -it --name hello ubuntu /bin/bash
+$ sudo docker run -it ubuntu /bin/bash
 ```
 * `--name` : assign new name
 * `-i` + `-t`: interactive + Pseudo-tty, you can use container's bash

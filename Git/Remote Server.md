@@ -8,7 +8,9 @@ $ git fetch
 ```
 $ git fetch
 $ git checkout test
+$ git checkout -b test [origin]/test
 ```
+-b options mean make new branch at local name as `test`
 
 * check branch
 ```
