@@ -9,17 +9,30 @@
 여러개의 queue를 독립적으로 운영함으로써 이 문제를 해결가능하다.
 문서에서는 [celery routing](http://docs.celeryproject.org/en/latest/userguide/routing.html) 라는 명칭을 사용한다.
 
+## Run queues
+### Commands
+```
+celery -A my_proj_name worker -Q too_long_queue
+celery -A my_proj_name worker -Q quick_queue
+```
+### Check
+```
+celery -A my_proj_name inspect active_queues
+```
+
+### Warning & Solution 1
+```
+DuplicateNodenameWarning: Received multiple replies from node name:
+```
+```
+celery -A my_proj_name worker -Q too_long_queue -n submission_worker
+celery -A my_proj_name worker -Q quick_queue -n compile_run_worker
+```
 
 ## Routing example
 ```
-task_routes = {'feed.tasks.import_feed': {'queue': 'feeds'}}
+app.conf.task_routes = {'my_app_name.tasks.compile_run_task': {'queue': 'quick_queue'}}
 ```
-```
-app.conf.update({
-    'task_routes': {
-        'qjudge.tasks.compile_run_task': {'queue': 'compile_run'},
-        'qjudge.tasks.submission_task': {'queue': 'submission'},
-        'othersite_linker.tasks.run_other_user_register_bot': {'queue': 'run_other_user_register_bot'}
-    }
-})
-```
+
+## See also
+https://hackernoon.com/using-celery-with-multiple-queues-retries-and-scheduled-tasks-589fe9a4f9ba
