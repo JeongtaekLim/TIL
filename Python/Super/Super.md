@@ -27,4 +27,29 @@ class C(A, B):
         super().__init__(a=1, b=2, c=3)
 ```
 
-class `C`의 super().__init__(a=1, b=2, c=3) 은 MRO(['C', 'A', 'B', 'object'])에 따라 class `A`의 __init__을 호출하고 끝난다.
+class `C`의 super().\_\_init\_\_(a=1, b=2, c=3) 은 MRO(['C', 'A', 'B', 'object'])에 따라 class `A`의 \_\_init\_\_을 호출하고 한다.
+
+만약, A와 B가 각각 특수한 서로 다른 일을 하고 있는 클래스이고
+
+C는 A와 B의 동작을 모두 각각 수행하고 싶은 경우에는 super를 사용하면 안된다.
+
+이런 경우에는 [Stackoverflow - Multiple inheritance in python3 with different signatures
+](https://stackoverflow.com/questions/26927571/multiple-inheritance-in-python3-with-different-signatures) 에 따라, 
+
+아래와 같이 self를 explicitly 하게 전달하여 \_\_init\_\_을 호출함으로써 문제를 해결 할 수 있다.
+
+```
+class A(object):
+    def __init__(self, a, b):
+        print('Init {} with arguments {}'.format(self.__class__.__name__, (a, b)))
+
+class B(object):
+    def __init__(self, q):
+        print('Init {} with arguments {}'.format(self.__class__.__name__, (q)))
+
+class C(A, B):
+    def __init__(self):
+        # Unbound functions, so pass in self explicitly
+        A.__init__(self, 1, 2)
+        B.__init__(self, 3)
+```
