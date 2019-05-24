@@ -1,6 +1,16 @@
+# Before start
+
+aws-sdk는 불안정한 것으로 자체 실험결과 결론났다.
+https://github.com/TheDeveloper/http-aws-es
+를 사용하여 하니 오히려 한번에 되었으며, AWS document는 다시한번 믿을게 못된다는 확신을 가질 수 있게 되었다..
+공식 Document에 있는 예제가 안되다니..
+
 # Introduction
+
 AWS 문서 어딘가에서 발견한, `aws-sdk`를 사용한 `aws elasticsearch` 활용 예제를 실행해보기위해 아래 코드를 사용하였다.
 아래 `**` 표시되어있는 두 줄만 해결해 주었더니 예제가 동작하였다.
+https://docs.aws.amazon.com/ko_kr/elasticsearch-service/latest/developerguide/es-request-signing.html#es-request-signing-node
+
 ```
 var AWS = require('aws-sdk/dist/aws-sdk-react-native');
 AWS.config.update({
@@ -48,4 +58,5 @@ export function indexDocument() {
     });
 }
 ```
+
 `aws-sdk`, `aws elasticsearch`, `aws elasticsearch 예제`
