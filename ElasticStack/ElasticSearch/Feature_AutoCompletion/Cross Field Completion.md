@@ -1,6 +1,8 @@
-# Multiple Field Completion
+# Cross Field Completion
 
-https://qbox.io/blog/multi-field-partial-word-autocomplete-in-elasticsearch-using-ngrams
+- https://qbox.io/blog/multi-field-partial-word-autocomplete-in-elasticsearch-using-ngrams
+- https://opensourceconnections.com/blog/2015/05/27/deep-dive-into-elasticsearch-cross-field-search/
+- https://opensourceconnections.com/blog/2015/05/27/deep-dive-into-elasticsearch-cross-field-search/
 
 ## Example
 
