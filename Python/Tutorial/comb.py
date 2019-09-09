@@ -10,7 +10,6 @@ if __name__ == "__main__":
     col_combs = []
     ans = []
 
-
     def is_unique(_col_comb):
         values = []
         for r in relation:
