@@ -4,7 +4,7 @@ import time
 
 
 def work(q):
-    r = requests.get("https://httpbin.org/status/404")
+    r = requests.get("https://httpbin.org/uuid")
     if r.status_code != 200:
         print("error!")
         return
@@ -16,7 +16,7 @@ def work(q):
 def process_example():
     q = Queue()
     plist = list()
-    for i in range(1):
+    for i in range(5):
         plist.append(Process(target=work, args=(q,)))
     for p in plist:
         p.start()
@@ -26,7 +26,7 @@ def process_example():
 
 def normal_example():
     q = Queue()
-    for i in range(1):
+    for i in range(5):
         work(q)
 
 
