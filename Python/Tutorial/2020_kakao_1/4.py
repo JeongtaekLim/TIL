@@ -28,4 +28,4 @@ def solution(words, queries):
 
 
 if __name__ == "__main__":
-    solution(["frodo", "front", "frost", "frozen", "frame", "kakao"], ["fro??", "????o", "fr???", "fro???", "pro?"])
+    solution(["frodo", "front", "frost", "frozen", "frame", "2020_kakao_1"], ["fro??", "????o", "fr???", "fro???", "pro?"])
