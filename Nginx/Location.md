@@ -27,3 +27,7 @@ server {
         }
 }
 ```
+
+## 테스트 가능 링크
+
+https://nginx.viraptor.info/
