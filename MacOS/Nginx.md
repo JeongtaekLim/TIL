@@ -8,7 +8,7 @@ brew services restart nginx
 brew services stop nginx
 ```
 
-## 로그
+## 로그파일
 
 ```
 /usr/local/var/log/nginx
